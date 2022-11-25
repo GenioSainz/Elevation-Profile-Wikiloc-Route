@@ -62,6 +62,24 @@ hold on;box on;grid on
     ax.Layer         = 'top';
     ax.FontSize      = 11;
     ax.LineWidth     = 1;
+
+    fontsize = 10.5;
+    
+    text(0.25,550,    'Pandillo','FontWeight','bold','FontSize',fontsize)
+    text(0.75,1180,   'Fincas de Colina','FontWeight','bold','FontSize',fontsize)
+    text(4,1730,      'Castro Valnera 1718m','FontWeight','bold','FontSize',fontsize)
+    text(6,1375,      'Torcaverosa','FontWeight','bold','FontSize',fontsize)
+    text(7,1580,      'Pico la Miel 1563m','FontWeight','bold','FontSize',fontsize)
+    text(9,1275,      'Portillo de Lunada 1320m','FontWeight','bold','FontSize',fontsize)
+    text(11,1650,     'Picon del Fraile 1625m','FontWeight','bold','FontSize',fontsize)
+    text(13,1530,     'Pico Veinte 1510m','FontWeight','bold','FontSize',fontsize)
+    text(14.5,1220,   'Mirador de Covalrruyo 1190m','FontWeight','bold','FontSize',fontsize)
+    text(16,850,      'La Casa del Rey 890m ','FontWeight','bold','FontSize',fontsize)
+    text(18.5,990,    'Fincas de Astragos','FontWeight','bold','FontSize',fontsize)
+    text(17.3,1050,   'Portillo el Cijo','FontWeight','bold','FontSize',fontsize)
+    text(22.2,1050,   'Fincas de la Vara','FontWeight','bold','FontSize',fontsize)
+    text(23.5,800,    'Cascada de Aguasal','FontWeight','bold','FontSize',fontsize)
+    text(25.9,550,    'Pandillo','FontWeight','bold','FontSize',fontsize)
     
 
 
