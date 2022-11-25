@@ -4,6 +4,11 @@ GPX       = gpxread("pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-fin
 Lat       = GPX.Latitude;
 Lon       = GPX.Longitude;
 Ele       = GPX.Elevation;
+index_nan = isnan(Lat) | isnan(Lon) | isnan(Ele);
+
+Lat(index_nan) = [];
+Lon(index_nan) = [];
+Ele(index_nan) = [];
 
 [coordsx,coordsy,~] = deg2utm(Lat,Lon);
 x     = zeros(1,length(Ele));
