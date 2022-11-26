@@ -18,7 +18,7 @@ https://es.wikiloc.com/rutas-senderismo/pandillo-castrovalnera-lunada-picondelfr
 
 https://es.wikiloc.com/rutas-senderismo/sanroque-porracolina-picondelfraile-piconesdecallejaalbira-sanroque-69089035
 
-![ElevationProfile](imgs/profile2edit.png)
+![ElevationProfile](imgs/profile2.png)
 
 
 https://es.wikiloc.com/rutas-senderismo/valdeason-mosquiteru-porracolina-ason-mortillano-penarocias-valdeason-72540252
