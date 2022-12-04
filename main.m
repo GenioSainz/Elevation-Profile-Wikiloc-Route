@@ -41,7 +41,6 @@ h_m            = movmean(h,window_length);
 
 % plot the profile with function area() and display the 
 % names with text()
-
 hold on;box on;grid on
 
     set(gcf,'position',[0,0,1920,1080])
