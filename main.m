@@ -1,5 +1,6 @@
 clear all;clc;close all
 
+% read gpx file and filter NaN values
 GPX       = gpxread("pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-finc.gpx");
 Lat       = GPX.Latitude;
 Lon       = GPX.Longitude;
@@ -10,12 +11,14 @@ Lat(index_nan) = [];
 Lon(index_nan) = [];
 Ele(index_nan) = [];
 
+% lat,lon => coords
 [coordsx,coordsy,~] = deg2utm(Lat,Lon);
 x     = zeros(1,length(Ele));
 x(1)  = 0;
 x_sum = 0;
 h     = Ele;
 
+% compute the distance vector x
 for i=1:length(coordsx)-1
     
     xi     = coordsx(i+1) - coordsx(i);
@@ -25,14 +28,19 @@ for i=1:length(coordsx)-1
 
 end
 
+% compute max, min values for the x,y axes
 min_x = 0;
 max_x = round(x_sum+0.5e3,-3)/1000;
 min_y = round(min(h)-0.5e2,-2);
 max_y = round(max(h)+0.5e2,-2);
 
+% filter the vector altitude h with a simple movmean low pass filter.
 window_percent = 0.25;
 window_length  = round(length(x)*window_percent/100);
 h_m            = movmean(h,window_length);
+
+% plot the profile with function area() and display the 
+% names with text()
 
 hold on;box on;grid on
 
