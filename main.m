@@ -59,7 +59,7 @@ hold on;box on;grid on
     axis([0 max_x min_y max_y]);
     pbaspect([2 1 1])
     
-    title({'PANDILLO - CASTRO VALNERA - LUNADA - PICON DEL FRAILE - COVALRUYO - FINCA DEL REY - PORTILLO EL CIJO - LA VARA - CASCADA AGUASAL - PANDILLO';'DISTANCIA: 26.13Km    DESNIVEL+: 2228m'})
+    title({'PANDILLO - CASTRO VALNERA - LUNADA - PICON DEL FRAILE - COVALRUYO - FINCA DEL REY - PORTILLO EL CIJO - LA VARA - CASCADA AGUASAL - PANDILLO';'DISTANCE: 26.13Km    ELEVATION GAIN: 2228m'})
     xlabel('Distance (Km)','FontSize',12,'FontWeight','bold','Color','k')
     ylabel('Height (m)','FontSize',12,'FontWeight','bold','Color','k')
     
