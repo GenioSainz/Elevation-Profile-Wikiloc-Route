@@ -43,19 +43,19 @@ $$
 
 https://es.wikiloc.com/rutas-senderismo/selaya-picones-de-sopena-castro-valnera-bajada-a-vega-de-pas-desde-el-alto-de-estacas-de-trueba-sel-57011719
 
-![ElevationProfile](imgs/profile3.png)
+![ElevationProfile](imgs/profile1.png)
 
 <br/>
 
 https://es.wikiloc.com/rutas-senderismo/pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-fincadelrey-portilloelcijo-lavara-cascadade-73922005
 
-![ElevationProfile](imgs/profile1.png)
+![ElevationProfile](imgs/profile2.png)
 
 <br/>
 
 https://es.wikiloc.com/rutas-senderismo/sanroque-porracolina-picondelfraile-piconesdecallejaalbira-sanroque-69089035
 
-![ElevationProfile](imgs/profile2.png)
+![ElevationProfile](imgs/profile3.png)
 
 <br/>
 
