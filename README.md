@@ -11,28 +11,28 @@ Some examples to compare the effect of varying the parameter **window_percent**:
 <br/>
 
 $$
-\overline{|GPS-Filtered|} = 0.271 m
+ Window \hspace{1ex} Length = 0.05\%  \longrightarrow \overline{|GPS-Filtered|} = 0.271 m
 $$
 
 ![ElevationProfile](filterImgs/filter_0.05.png)
 <br/><br/>
 
 $$
-\overline{|GPS-Filtered|} = 0.389m
+Window \hspace{1ex} Length = 0.10\%  \longrightarrow  \overline{|GPS-Filtered|} = 0.389m
 $$
 
 ![ElevationProfile](filterImgs/filter_0.10.png)
 <br/><br/>
 
 $$
-\overline{|GPS-Filtered|} = 0.544 m
+Window \hspace{1ex} Length = 0.15\%  \longrightarrow  \overline{|GPS-Filtered|} = 0.544 m
 $$
 
 ![ElevationProfile](filterImgs/filter_0.15.png)
 <br/><br/>
 
 $$
-\overline{|GPS-Filtered|} = 0.740 m
+Window \hspace{1ex} Length = 0.20\%  \longrightarrow  \overline{|GPS-Filtered|} = 0.740 m
 $$
 
 ![ElevationProfile](filterImgs/filter_0.20.png)
