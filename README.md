@@ -16,18 +16,21 @@ $$
 $$
 \overline{|GPS-Filtered|} = 0.389m
 $$
+
 ![ElevationProfile](filterImgs/filter_0.10.png)
 <br/><br/>
 
 $$
 \overline{|GPS-Filtered|} = 0.544 m
 $$
+
 ![ElevationProfile](filterImgs/filter_0.15.png)
 <br/><br/>
 
 $$
 \overline{|GPS-Filtered|} = 0.740 m
 $$
+
 ![ElevationProfile](filterImgs/filter_0.2.png)
 <br/><br/>
 
