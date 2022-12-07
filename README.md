@@ -6,29 +6,29 @@ With this script you can represent and customize altitude profiles from .gpx fil
 
 <br/>
 
-
 $$
 \overline{|GPS-Filtered|} = 0.271 m
 $$
-<img src="filterImgs/filter_0.05.png" alt="drawing" width="100%"/>
+
+![ElevationProfile](filterImgs/filter_0.05.png)
 <br/><br/>
 
 $$
 \overline{|GPS-Filtered|} = 0.389m
 $$
-<img src="filterImgs/filter_0.10.png" alt="drawing" width="100%"/>
+![ElevationProfile](filterImgs/filter_0.10.png)
 <br/><br/>
 
 $$
 \overline{|GPS-Filtered|} = 0.544 m
 $$
-<img src="filterImgs/filter_0.15.png" alt="drawing" width="100%"/>
+![ElevationProfile](filterImgs/filter_0.15.png)
 <br/><br/>
 
 $$
 \overline{|GPS-Filtered|} = 0.740 m
 $$
-<img src="filterImgs/filter_0.15.png" alt="drawing" width="100%"/>
+![ElevationProfile](filterImgs/filter_0.2.png)
 <br/><br/>
 
 
