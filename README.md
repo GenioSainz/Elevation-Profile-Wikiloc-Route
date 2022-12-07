@@ -1,10 +1,16 @@
 # Elevation Profile
 
-
 With this script you can represent and customize altitude profiles from .gpx files using Matlab. 
 
+![ElevationProfile](filterImgs/SubPlotWindowLength.png)
 
-## Elevation profiles examples from my wikiloc routes
+<p align="center">
+   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
+   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
+   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
+</p>
+
+# Elevation profiles final examples from my wikiloc routes
 
 https://es.wikiloc.com/rutas-senderismo/selaya-picones-de-sopena-castro-valnera-bajada-a-vega-de-pas-desde-el-alto-de-estacas-de-trueba-sel-57011719
 
