@@ -4,10 +4,34 @@ With this script you can represent and customize altitude profiles from .gpx fil
 
 ![ElevationProfile](filterImgs/SubPlotWindowLength.png)
 
+<br/>
+
 <p align="center">
-   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
-   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
-   <img src="filterImgs/filter_0.05.png" alt="drawing" width="70%"/>
+
+
+   $$
+   \overline{|GPS-Filtered|} = 0.271 m
+   $$
+   <img src="filterImgs/filter_0.05.png" alt="drawing" width="100%"/>
+   <br/><br/>
+
+   $$
+   \overline{|GPS-Filtered|} = 0.389m
+   $$
+   <img src="filterImgs/filter_0.10.png" alt="drawing" width="100%"/>
+   <br/><br/>
+   
+   $$
+   \overline{|GPS-Filtered|} = 0.544 m
+   $$
+   <img src="filterImgs/filter_0.15.png" alt="drawing" width="100%"/>
+   <br/><br/>
+
+   $$
+   \overline{|GPS-Filtered|} = 0.740 m
+   $$
+   <img src="filterImgs/filter_0.15.png" alt="drawing" width="100%"/>
+   <br/><br/>
 </p>
 
 # Elevation profiles final examples from my wikiloc routes

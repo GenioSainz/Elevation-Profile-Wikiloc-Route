@@ -82,7 +82,7 @@ for k=1:length(percents)
     axis([x_min x_max 0 4]);
     pbaspect([4 3 1])
 
-    ylabel('|Gps - Filter| (m)','FontSize',13,'FontWeight','bold','Color','k')
+    ylabel('|Gps - Filtered| (m)','FontSize',13,'FontWeight','bold','Color','k')
     
     % axis properties
     ax               = gca;
@@ -96,7 +96,7 @@ for k=1:length(percents)
     ax.LineWidth     = 1;
 
     fontsize = 16;
-    legen = legend(' Filter Signal',' GPS Signal','$|GPS-Filter|$','$\overline{|GPS-Filter|}$','interpreter','latex');
+    legen = legend(' Filtered Signal',' GPS Signal','$|GPS-Filtered|$','$\overline{|GPS-Filtered|}$','interpreter','latex');
     legen.Location  = 'northwest';
     legen.FontSize  = fontsize;
     

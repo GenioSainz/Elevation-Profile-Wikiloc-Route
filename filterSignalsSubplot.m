@@ -57,7 +57,7 @@ for k=1:length(percents)
 
         ylabel('Height (m)','FontSize',12,'FontWeight','bold','Color','k')
        
-        legen = legend(' Filter Signal',' GPS Signal');
+        legen = legend(' Filtered Signal',' GPS Signal');
         legen.Location   = 'northwest';
         legen.FontSize   = 12;
         legen.FontWeight = 'bold';
