@@ -1,7 +1,7 @@
-clear all;clc;close all
+clear all;clc;close all;
 
 % read gpx file and filter NaN values
-GPX       = gpxread("pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-finc.gpx");
+GPX       = gpxread("dataGPX/pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-finc.gpx");
 Lat       = GPX.Latitude;
 Lon       = GPX.Longitude;
 Ele       = GPX.Elevation;

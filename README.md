@@ -39,7 +39,7 @@ https://es.wikiloc.com/rutas-senderismo/selaya-picones-de-sopena-castro-valnera-
 
 ![ElevationProfile](imgs/profile1.png)
 
-<br/>
+<hr/>
 
 https://es.wikiloc.com/rutas-senderismo/pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-fincadelrey-portilloelcijo-lavara-cascadade-73922005
 
@@ -62,3 +62,9 @@ https://es.wikiloc.com/rutas-senderismo/valdeason-mosquiteru-porracolina-ason-mo
 https://es.wikiloc.com/rutas-senderismo/el-canto-la-lluela-valdicio-porracolina-pizarras-pico-veinte-lunada-pico-la-miel-canal-de-valbuena-120774650
 
 ![img5](imgs/profile5.png)
+
+![img](imgs/elevation_profile_1.png)
+![img](imgs/elevation_profile_2.png)
+![img](imgs/elevation_profile_3.png)
+![img](imgs/elevation_profile_4.png)
+![img](imgs/elevation_profile_5.png)
