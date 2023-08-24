@@ -1,8 +1,10 @@
 function getTxtCoords(TXT)
 
 
-%     getTxtCoords(T)
-
+%     getTxtCoords(TXT)
+%     
+%     get tex coordinates draging mouse
+%
 %     00.39,  535, "El Canto"; 
 %     00.57,  983, "La LLuela"; 
 %     03.42,  615, "Valdició"; 
