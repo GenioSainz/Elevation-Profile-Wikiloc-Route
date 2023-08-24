@@ -5,7 +5,8 @@ tic
 GPX1.title = "Selaya-Picones de Sopeña-Castro Valnera-Bajada a Vega de Pas desde el alto de Estacas de Trueba-Selaya";
 GPX1.EG    = "3047";
 GPX1.DI    = "48.24";
-GPX1.txt   = {3,550,     'San Bartolo 550m';
+GPX1.txt   = {1.5,250,   'Selaya';
+              3,550,     'San Bartolo 550m';
               4.5,700,   'Los Pobles 720m';
               5.5,1000,  'Las Mazas 968m';
               9,775,     'El Caracol 808m';
@@ -21,7 +22,8 @@ GPX1.txt   = {3,550,     'San Bartolo 550m';
               29.0,1025, 'Bajada por la cresta Alto de Estacas de Trueba - Vega de Pas';
               34,320,    'Vega de Pas 350m';
               38,750,    'La Braguia 707m';
-              44,550,    'El Collao 490m'};
+              44,550,    'El Collao 490m';
+              45.8,250,   'Selaya';};
 if readGPXfiles
    GPX1_file = gpxread("gpxFiles/selaya-picones-de-sopena-castro-valnera-bajada-a-vega-de-pas.gpx");
 end 

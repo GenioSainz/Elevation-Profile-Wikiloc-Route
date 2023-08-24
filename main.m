@@ -7,7 +7,7 @@ getGPXdata(readGPXfiles)
 load('dataLabels.mat')
 load('dataGPX.mat')
 
-for i=8 % i = route profile_i
+for i=1 % i = route profile_i
     
     clearvars -except i dataLabels dataGPX
     
