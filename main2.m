@@ -1,5 +1,8 @@
 clear all;clc;close all
 
+
+%%% MAIN2 --> PLOT ELEVATION GAIN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 readGPXfiles = false;
 
 getGPXdata(readGPXfiles)
@@ -7,7 +10,7 @@ getGPXdata(readGPXfiles)
 load('dataLabels.mat')
 load('dataGPX.mat')
 
-for i=1 % i = route profile_i
+for i=2 % i = route profile_i
     
     clearvars -except i dataLabels dataGPX
     
@@ -29,7 +32,10 @@ for i=1 % i = route profile_i
     x     = zeros(1,length(Ele));
     x(1)  = 0;
     x_sum = 0;
+
     h     = Ele;
+    h_sum = 0;
+    cumh  = zeros(1,length(Ele));
     
     % compute the distance vector x
     for j=1:length(coordsx)-1
@@ -38,6 +44,13 @@ for i=1 % i = route profile_i
         yi     = coordsy(j+1) - coordsy(j);
         x_sum  = x_sum + sqrt(xi^2 + yi^2);
         x(j+1) = x_sum;
+
+        if h(j+1)>h(j)
+            h_sum     = h_sum + h(j+1)-h(j);
+           
+        end
+
+         cumh(j+1) = h_sum;
     
     end
     
@@ -61,7 +74,8 @@ for i=1 % i = route profile_i
     nexttile
     hold on;box on;grid on;
     annotation('rectangle',[0 0 1 1 ],'Color','k',LineWidth=0.1);
-
+    
+    yyaxis left
     % plot filter signal
     area = area(x/1000,h_m);
            area.FaceColor = [0.4660 0.6740 0.1880] ;
@@ -75,7 +89,9 @@ for i=1 % i = route profile_i
     axis([0 x_sum/1000 min_y max_y]);
     pbaspect([2 1 1])
     
-    
+    yyaxis right
+    plot(x/1000,cumh);
+
     title({data.title;sprintf('Distance: %0.2f km  Elevation Gain: %d m',str2num(data.DI),str2num(data.EG))})
     xlabel('Distance [km]')
     ylabel('Height [m]')
@@ -101,6 +117,5 @@ for i=1 % i = route profile_i
          TXT{k} =text(txt{k,1},txt{k,2},txt{k,3},'FontWeight','bold','FontSize',fontsize);
     end
     
-    xportgraphics(gcf,['imgs/elevation_profile_',num2str(i),e'.png'],'Resolution',300);
 
 end
