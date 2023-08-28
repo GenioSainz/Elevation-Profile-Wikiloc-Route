@@ -101,6 +101,6 @@ for i=1 % i = route profile_i
          TXT{k} =text(txt{k,1},txt{k,2},txt{k,3},'FontWeight','bold','FontSize',fontsize);
     end
     
-    xportgraphics(gcf,['imgs/elevation_profile_',num2str(i),e'.png'],'Resolution',300);
+    exportgraphics(gcf,['imgs/elevation_profile_',num2str(i),'.png'],'Resolution',300);
 
 end
