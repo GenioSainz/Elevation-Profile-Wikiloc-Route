@@ -11,6 +11,8 @@ Some examples to compare the effect of varying the parameter **window_percent**:
 $$ \overline{|GPS-Filtered|} = 0.271m   $$
 
 ![ElevationProfile](filterImgs/filter_0.05.png)
+
+![ElevationProfile](filterImgs/bar_widow_percent.png)
 <br/><br/>
 
 # Final examples of elevation profiles from my [Wikiloc Routes ](https://es.wikiloc.com/wikiloc/user.do?id=6299750)
@@ -18,40 +20,40 @@ $$ \overline{|GPS-Filtered|} = 0.271m   $$
 
 ## Profile 1
 https://es.wikiloc.com/rutas-senderismo/selaya-picones-de-sopena-castro-valnera-bajada-a-vega-de-pas-desde-el-alto-de-estacas-de-trueba-sel-57011719
-![](imgs/elevation_profile_1.png)
+![](imgsEleGain/elevation_profile_filter_1.png)
 <br/>
 
 ## Profile 2
 https://es.wikiloc.com/rutas-senderismo/pandillo-castrovalnera-lunada-picondelfraile-covalrruyo-fincadelrey-portilloelcijo-lavara-cascadade-73922005
-![](imgs/elevation_profile_2.png)
+![](imgsEleGain/elevation_profile_filter_2.png)
 <br/>
 
 ## Profile 3
 https://es.wikiloc.com/rutas-senderismo/sanroque-porracolina-picondelfraile-piconesdecallejaalbira-sanroque-69089035
-![](imgs/elevation_profile_3.png)
+![](imgsEleGain/elevation_profile_filter_3.png)
 <br/>
 
 ## Profile 4
 https://es.wikiloc.com/rutas-senderismo/valdeason-mosquiteru-porracolina-ason-mortillano-penarocias-valdeason-72540252
-![](imgs/elevation_profile_4.png)
+![](imgsEleGain/elevation_profile_filter_4.png)
 <br/>
 
 ## Profile 5
 https://es.wikiloc.com/rutas-senderismo/el-canto-la-lluela-valdicio-porracolina-pizarras-pico-veinte-lunada-pico-la-miel-canal-de-valbuena-120774650
-![](imgs/elevation_profile_5.png)
+![](imgsEleGain/elevation_profile_filter_5.png)
 <br/>
 
 ## Profile 6
 https://es.wikiloc.com/rutas-senderismo/bernallan-portillo-el-cijo-castro-valnera-el-bernacho-pico-la-miel-lunada-picon-del-fraile-pico-vei-123025667
-![](imgs/elevation_profile_6.png)
+![](imgsEleGain/elevation_profile_filter_6.png)
 <br/>
 
 ## Profile 7
 https://es.wikiloc.com/rutas-senderismo/bustantegua-las-mazas-sopena-castro-valnera-valbuena-la-zamina-bustantegua-123253959
-![](imgs/elevation_profile_7.png)
+![](imgsEleGain/elevation_profile_filter_7.png)
 <br/>
 
 ## Profile 8
 https://es.wikiloc.com/rutas-senderismo/losbarrios-ajanedo-bustablao-losmachucos-porracolina-calseca-losbarrios-144384091
-![](imgs/elevation_profile_8.png)
+![](imgsEleGain/elevation_profile_filter_8.png)
 <br/>

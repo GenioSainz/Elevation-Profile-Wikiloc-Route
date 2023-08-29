@@ -8,10 +8,10 @@ getGPXdata(readGPXfiles)
 
 load('dataLabels.mat')
 load('dataGPX.mat')
-
-for i=1% I = ROUTE PROFILE_I
+tic
+for i=1:8% I = ROUTE PROFILE_I
     
-    clearvars -except i dataLabels dataGPX
+    clearvars -except i dataLabels dataGPX 
     
     data  = dataLabels{i};
     GPX   = dataGPX{i};
@@ -28,8 +28,8 @@ for i=1% I = ROUTE PROFILE_I
 
     %%% FILTER THE VECTOR ALTITUDE H WITH A MOVMEAN LOW PASS FILTER
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    window_percent = 0.25;
-    window_length  = 50;%round(length(Ele)*window_percent/100);
+    window_percent = 0.35;
+    window_length  = round(length(Ele)*window_percent/100);
     Ele            = movmean(Ele,window_length);
     
     %%% LAT,LON => COORDS
@@ -65,13 +65,15 @@ for i=1% I = ROUTE PROFILE_I
     end 
 
     Egain = round(cumsum(sumh_pos));
+    Eloss = round(cumsum(sumh_neg));
  
     %%% COMPUTE MAX, MIN VALUES FOR THE X,Y AXIS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     min_x = 0;
     max_x = ceil(x(end)/1000);
     min_y = round(min(Ele)-0.5e2,-2);
-    max_y = round(max(Ele)+0.5e2,-2);
+    %max_y = round(max(Ele)+0.5e2,-2);
+    max_y = round(max(Ele)+1e2,-2);
 
     %%% INIT FIGURE
     %%%%%%%%%%%%%%%%%%
@@ -113,7 +115,7 @@ for i=1% I = ROUTE PROFILE_I
     
     %%%% ADJUST AXIS LABELS-TICKS AND ASPECT RATIO
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    title({data.title;sprintf('Distance: %0.2f km  EG Wikiloc: %d m EG Computed: %d m',str2num(data.DI),str2num(data.EG),Egain(end))})
+    title({data.title;sprintf('Distance: %0.2f km  Elevation Gain: %d m',str2num(data.DI),str2num(data.EG))})
     xlabel('Distance [km]')
     ylabel('Height [m]')  
     xticks(min_x:max_x)
@@ -133,6 +135,18 @@ for i=1% I = ROUTE PROFILE_I
     ax.FontSize      = 14;
     ax.LineWidth     = 1;
 
-    %%exportgraphics(gcf,'imgs/prueba1f.png','Resolution',300);
-
+    exportgraphics(gcf,['imgsEleGain/elevation_profile_filter_',num2str(i),'.png'],'Resolution',300);
+    
+    EG_wiki = str2double(data.EG);
+    EG_comp = Egain(end);
+    EL_comp = abs(Eloss(end));
+    
+    fprintf('###################### \n')
+    fprintf('PROFILE %d \n',i)
+    fprintf('Wikiloc  E-GAIN:%d \n',EG_wiki)
+    fprintf('Computed E-GAIN:%d  error:%0.3f%%\n' ,EG_comp,100*abs(EG_wiki-EG_comp)/EG_wiki)
+    fprintf('Computed E-LOSS:%d  error:%0.3f%%\n' ,EL_comp,100*abs(EG_wiki-EL_comp)/EG_wiki)
+    fprintf('Window Length %d  \n',window_length)
+    
 end
+toc
